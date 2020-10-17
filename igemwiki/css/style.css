@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,600&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background: rgb(241,181,208);
+    background: linear-gradient(90deg, rgba(241,181,208,1) 0%, rgba(213,108,157,1) 100%);
+}
+nav{
+    font-weight: bold;
+    color: #fff;
+}
+.nav-link{
+    color: #fff;
+}
+.nav-link:hover{
+    color: rgb(236, 230, 230);
+}
+
+.active{
+    text-decoration: underline;
+}
+
+.logo{
+    display: inline-block;
+    width: 80px;
+    height: auto;
+}
+
+#desktop{
+    margin-top: 80px;
+}
+section{
+    position: relative;
+}
+section h2{
+    color: #8C2349;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+section p{
+    color: black;
+    text-align: center;
+    font-size: .9rem;
+}
+.right-curve{
+    position: absolute;
+    top: 52%;
+    left: 20%;
+}
+.muscle-left-curve{
+    position: absolute;
+    top: 85%;
+    left: 28%;
+}
+#muscle{
+    position: relative;
+    top: -13%;
+}
+
+.muscle-description{
+    position: relative;
+    top: -20%;
+}
+
+.muscle-description-s{
+    position: relative;
+    top: -14rem;
+}
+
+.dots-description{
+    position: relative;
+    top: 7rem;
+}
+.dots-curve{
+    position: absolute;
+    top: 10rem;
+    left: 18rem;
+}
+
+.cell-section{
+    margin-top: 20rem;
+}
+
+.cell-svg{
+    position: absolute;
+    top: 5rem;
+}
+
+.cell-curve{
+    position: absolute;
+    left: 8rem;
+    top: 20rem;
+}
+
+.cell-2-section{
+    top: 15rem;
+}
+.cell-2-curve{
+    position: absolute;
+    top: 10rem;
+    right: 7%;
+}
+
+.colored-cells-curve{
+    position: absolute;
+    top: 14rem;
+    right: 20rem;
+}
+.cancer-cell-svg{
+    position: absolute;
+    top: -5rem;
+}
+.cancer-curve{
+    position: absolute;
+    top: 50%;
+    left: 37%;
+}
+
+footer{
+    position: relative;
+    margin-top: 5rem;
+    background-image: url('../assets/footercurves.svg');
+    height: 700px;
+    background-position-x: -1rem;
+}
+.footer-curves{
+    position: absolute;
+}
+footer h3{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+footer h4{
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #fff;
+}
