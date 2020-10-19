@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,600&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background: rgb(241,181,208);
+    background: linear-gradient(90deg, rgba(241,181,208,1) 0%, rgba(213,108,157,1) 100%);
+}
+nav{
+    font-weight: bold;
+    color: #fff;
+}
+.nav-link{
+    color: #fff;
+}
+.nav-link:hover{
+    color: rgb(236, 230, 230);
+}
+
+.active{
+    text-decoration: underline;
+}
+
+.logo{
+    display: inline-block;
+    width: 80px;
+    height: auto;
+}
+
+#desktop{
+    margin-top: 80px;
+}
+section{
+    position: relative;
+}
+section h2{
+    color: #8C2349;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+section p{
+    color: black;
+    text-align: center;
+    font-size: .9rem;
+}
+.right-curve{
+    position: absolute;
+    top: 52%;
+    left: 20%;
+}
+.muscle-left-curve{
+    position: absolute;
+    top: 85%;
+    left: 28%;
+}
+#muscle{
+    position: relative;
+    top: -13%;
+}
+
+.muscle-description{
+    position: relative;
+    top: -20%;
+}
+
+.muscle-description-s{
+    position: relative;
+    top: -14rem;
+}
+
+.dots-description{
+    position: relative;
+    top: 7rem;
+}
+.dots-curve{
+    position: absolute;
+    top: 10rem;
+    left: 18rem;
+}
+
+.cell-section{
+    margin-top: 20rem;
+}
+
+.cell-svg{
+    position: absolute;
+    top: 5rem;
+}
+
+.cell-curve{
+    position: absolute;
+    left: 8rem;
+    top: 20rem;
+}
+
+.cell-2-section{
+    top: 15rem;
+}
+.cell-2-curve{
+    position: absolute;
+    top: 10rem;
+    right: 7%;
+}
+
+.colored-cells-curve{
+    position: absolute;
+    top: 14rem;
+    right: 20rem;
+}
+.cancer-cell-svg{
+    position: absolute;
+    top: -5rem;
+}
+.cancer-curve{
+    position: absolute;
+    top: 50%;
+    left: 37%;
+}
+
+footer{
+    position: relative;
+    margin-top: 5rem;
+    background-image: url('https://2020.igem.org/wiki/images/6/6b/T--AFCM-Egypt--footercurves.svg');
+    height: 700px;
+    background-position-x: -1rem;
+}
+.footer-curves{
+    position: absolute;
+}
+footer h3{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+footer h4{
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #d8b2c6;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
