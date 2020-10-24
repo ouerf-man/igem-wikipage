@@ -13,14 +13,63 @@ nav{
 .nav-link{
     color: #fff;
 }
+.navbar-fixed-left {
+    position: fixed;
+    height: 100vh;
+    width: 227px;
+    background-image: url('../assets/pink-ribbons.jpg');
+    background-position: center;
+    background-size: contain;
+    backdrop-filter: blur(2px);
+    filter: drop-shadow(8px 3px 80px rgb(174, 172, 172));
+}
+  
+.side-nav-brand{
+    height: 150px;
+}
+.side-nav-items li{
+    text-align: center;
+    background-color: rgba(239, 214, 215, .5);
+    padding: 7px 0px;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.side-nav-items li a{
+    color: #3d3d3d;
+    text-decoration: none;
+}
+.side-nav-items li:hover{
+    background-color: rgba(239, 214, 215, .9);
+}
+  .navbar-fixed-left .navbar-nav > li {
+    float: none;  /* Cancel default li float: left */
+    width: 139px;
+  }
+  
+  .navbar-fixed-left + .container {
+    padding-left: 160px;
+  }
+  
+  /* On using dropdown menu (To right shift popuped) */
+  .navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+    margin-top: -50px;
+    margin-left: 140px;
+  }
+.dropdown-item{
+    color: #000!important;
+}
 .nav-link:hover{
-    color: rgb(236, 230, 230);
+    color: rgb(236, 230, 230)!important;
 }
 
 .active{
     text-decoration: underline;
 }
-
+.home-description{
+    font-size: 1.2rem!important;
+    opacity: .8;
+}
 .logo{
     display: inline-block;
     width: 80px;
@@ -263,4 +312,15 @@ section .section-title {
     width: 120px;
     height: 120px;
     border-radius: 50%;
+}
+
+
+/*engineering*/
+
+.table-background{
+    background-color: #d56d9e;
+}
+
+table a{
+    color: rgb(71, 71, 71);
 }
