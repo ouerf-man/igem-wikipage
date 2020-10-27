@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/T--AFCM-Egypt--style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="navbar-inverse navbar-fixed-left">
+                <ul class="side-nav-items py-5 px-2">
+                    <a href="#basic">
+                        <li>
+                            Basic Parts
+                        </li>
+                    </a>
+                    <a href="#composite">
+                        <li>
+                            Composite Parts
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <nav class="navbar navbar-expand-lg pl-4 pt-3 pr-4 mb-5 container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img class="navbar-toggler-icon d-inline"
+                        src="https://2020.igem.org/wiki/images/d/d3/T--AFCM-Egypt--navbarbutton.jpeg" alt="">
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Team
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="team.html">Team members</a>
+                                <a class="dropdown-item" href="#">Attributions</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Project
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Description</a>
+                                <a class="dropdown-item" href="#">Engineering</a>
+                                <a class="dropdown-item" href="#">Contribution</a>
+                                <a class="dropdown-item" href="#">Implementation</a>
+                                <a class="dropdown-item" href="#">Entrepreneurship</a>
+                                <a class="dropdown-item" href="#">Modeling</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Parts
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Basic Parts</a>
+                                <a class="dropdown-item" href="#">Composite Parts</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Software</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Human Practices
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Human Practices</a>
+                                <a class="dropdown-item" href="#">Education</a>
+                                <a class="dropdown-item" href="#">Collaboration</a>
+                                <a class="dropdown-item" href="#">Partnership</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="py-5 container">
+                <h1>Parts</h1>
+                <section id="assembly" class="d-flex flex-column align-items-center my-5">
+                    <small>
+                        NOTICE: Parts in our range for this season have been created as a part of our Phase I design of
+                        our project. These parts HAVE NOT been tested or characterized in the lab due to
+                        COVID-19-related precautionary measures. We have enriched our new parts pages with data from
+                        literature and results from our modeling and simulations. If you are intending on using this
+                        part or others in our range, please keep in mind these limitations and update these parts with
+                        data from your experimentation. Feel free to reach us at: igem.afcm@gmail.com for further
+                        inquiries.
+
+                    </small>
+                    <h2 id="basic">Basic Parts</h2>
+                    <img src="https://2020.igem.org/wiki/images/a/ae/T--AFCM-Egypt--SoftwareRepModel.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <table class="table">
+                        <thead class="table-background">
+                            <tr>
+                                <th scope="col">Biobrick</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Role</th>
+                                <th scope="col">Length</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <a href="http://parts.igem.org/Part:BBa_K3504000">
+                                        BBa_K3504000
+                                    </a>
+                                </th>
+                                <td>Coding</td>
+                                <td>nSP1capping-EEV
+                                </td>
+                                <td>1605 bp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <a href="http://parts.igem.org/Part:BBa_K3504001">
+                                        BBa_K3504001
+                                    </a>
+                                </th>
+                                <td>Coding</td>
+                                <td>nSp2 Protease-EEV
+                                </td>
+                                <td>2382 bp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <a href="http://parts.igem.org/Part:BBa_K3504002">
+                                        BBa_K3504002
+                                    </a>
+                                </th>
+                                <td>Coding</td>
+                                <td>nSP3'-EEV
+                                </td>
+                                <td>1671bp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <a href="http://parts.igem.org/Part:BBa_K3504003">
+                                        BBa_K3504003
+                                    </a>
+                                </th>
+                                <td>Coding</td>
+                                <td>nSP4-RNA-directed RNA Polymerase-EEV
+                                </td>
+                                <td>1821 bp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <a href="http://parts.igem.org/Part:BBa_K3504004">
+                                        BBa_K3504004
+                                    </a>
+                                </th>
+                                <td>Regulatory</td>
+                                <td>Subgenomic promoter</td>
+                                <td>30 bp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <a href="http://parts.igem.org/Part:BBa_K3504005">
+                                        BBa_K3504005
+                                    </a>
+                                </th>
+                                <td>DNA</td>
+                                <td>Malat-1Triplex
+                                </td>
+                                <td>132 bp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="http://parts.igem.org/Part:BBa_K3504006">
+                                        BBa_K3504006
+                                    </a></th>
+                                <td>Regulatory</td>
+                                <td>mi-RNA FF6</td>
+                                <td>64 bp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="http://parts.igem.org/Part:BBa_K3504007">
+                                        BBa_K3504007
+                                    </a></th>
+                                <td>Coding</td>
+                                <td>Gly-Ala repeats</td>
+                                <td>717 bp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="http://parts.igem.org/Part:BBa_K3504008">
+                                        BBa_K3504008
+                                    </a></th>
+                                <td>Coding</td>
+                                <td>MiR-126 Binding Site</td>
+                                <td>88 bp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="http://parts.igem.org/Part:BBa_K3504011">
+                                        BBa_K3504011
+                                    </a></th>
+                                <td>Coding</td>
+                                <td>Multi-Epitope TNBC</td>
+                                <td>1239 bp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="http://parts.igem.org/Part:BBa_K3504012">
+                                        BBa_K3504012
+                                    </a></th>
+                                <td>RNA</td>
+                                <td>MiRNA FF4</td>
+                                <td>103 bp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="http://parts.igem.org/Part:BBa_K3504013">
+                                        BBa_K3504013
+                                    </a></th>
+                                <td>Coding</td>
+                                <td>nSP1capping-SFV</td>
+                                <td>1611 bp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="http://parts.igem.org/Part:BBa_K3504014">
+                                        BBa_K3504014
+                                    </a></th>
+                                <td>Coding</td>
+                                <td>nSp2 Protease-SFV</td>
+                                <td>2397 bp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="http://parts.igem.org/Part:BBa_K3504015">
+                                        BBa_K3504015
+                                    </a></th>
+                                <td>Coding</td>
+                                <td>nSP3'-SFV</td>
+                                <td>1446 bp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="http://parts.igem.org/Part:BBa_K3504016">
+                                        BBa_K3504016
+                                    </a></th>
+                                <td>Coding</td>
+                                <td>nSP4-RNA-directed RNA Polymerase-SFV</td>
+                                <td>1839 bp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="http://parts.igem.org/Part:BBa_K3504017">
+                                        BBa_K3504017
+                                    </a></th>
+                                <td>Regulatory</td>
+                                <td>SP6 Promoter</td>
+                                <td>19 bp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="http://parts.igem.org/Part:BBa_K3504018">
+                                        BBa_K3504018
+                                    </a></th>
+                                <td>Coding</td>
+                                <td>P2A</td>
+                                <td>174 bp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="http://parts.igem.org/Part:BBa_K3504019">
+                                        BBa_K3504019
+                                    </a></th>
+                                <td>DNA</td>
+                                <td>FF4 Binding Site</td>
+                                <td>52 bp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="http://parts.igem.org/Part:BBa_K3504020">
+                                        BBa_K3504020
+                                    </a></th>
+                                <td>Coding</td>
+                                <td>Multi-Epitope TNBC Vaccine V2</td>
+                                <td>1128 bp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="http://parts.igem.org/Part:BBa_K3504021">
+                                        BBa_K3504021
+                                    </a></th>
+                                <td>Coding</td>
+                                <td>Multi-Epitope TNBC Vaccine V3</td>
+                                <td>1356 bp</td>
+                            </tr>
+                    </table>
+                    <h2 id="composite">
+                        Composite parts
+                    </h2>
+                    <table class="table">
+                        <thead class="table-background">
+                            <tr>
+                                <th scope="col">Biobrick</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Role</th>
+                                <th scope="col">Length</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <a href="http://parts.igem.org/Part:BBa_K3504009">
+                                        BBa_K3504009
+                                    </a>
+                                </th>
+                                <td>Composite</td>
+                                <td>Alphavirus replicon
+                                </td>
+                                <td>8163 bp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <a href="http://parts.igem.org/Part:BBa_K3504010">
+                                        BBa_K3504010
+                                    </a>
+                                </th>
+                                <td>Composite</td>
+                                <td>Multi-epitope TNBC Vaccine regulated by SGP 30
+                                </td>
+                                <td>2554 bp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <a href="http://parts.igem.org/Part:BBa_K3504022">
+                                        BBa_K3504022
+                                    </a>
+                                </th>
+                                <td>Composite</td>
+                                <td>Alphavirus replicon NSPs- SFV
+                                </td>
+                                <td>7977 bp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <a href="http://parts.igem.org/Part:BBa_K3504023">
+                                        BBa_K3504023
+                                    </a>
+                                </th>
+                                <td>Composite</td>
+                                <td>Off Switch
+                                </td>
+                                <td>810 bp</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

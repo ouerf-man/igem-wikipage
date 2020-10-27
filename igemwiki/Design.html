@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/T--AFCM-Egypt--style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="navbar-inverse navbar-fixed-left">
+                <ul class="side-nav-items py-5 px-2">
+                    <a href="#intro">
+                        <li>
+                            Introduction
+                        </li>
+                    </a>
+                    <a href="#hotspot">
+                        <li>
+                            HOTSPOT Neoantigens Retrieval
+                        </li>
+                    </a>
+                    <a href="#Neoepitope-Discovery">
+                        <li>
+                            Neoepitope-Discovery & Computational Validation.
+                        </li>
+                    </a>
+                    <a href="#identificationEpitops">
+                        <li>
+                            Identification Of MHC I & MHC II Epitopes
+                        </li>
+                    </a>
+                    <a href="#prediction-linear">
+                        <li>
+                            Prediction of linear B-cell epitopes
+                        </li>
+                    </a>
+                    <a href="#validation">
+                        <li>
+                            Validation
+                        </li>
+                    </a>
+                    <a href="#computation">
+                        <li>
+                            Computational Simulation
+                        </li>
+                    </a>
+                    <a href="#linker">
+                        <li>
+                            Linker Optimization 
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <nav class="navbar navbar-expand-lg pl-4 pt-3 pr-4 mb-5 container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img class="navbar-toggler-icon d-inline"
+                        src="https://2020.igem.org/wiki/images/d/d3/T--AFCM-Egypt--navbarbutton.jpeg" alt="">
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Team
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="team.html">Team members</a>
+                                <a class="dropdown-item" href="#">Attributions</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Project
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Description</a>
+                                <a class="dropdown-item" href="#">Engineering</a>
+                                <a class="dropdown-item" href="#">Contribution</a>
+                                <a class="dropdown-item" href="#">Implementation</a>
+                                <a class="dropdown-item" href="#">Entrepreneurship</a>
+                                <a class="dropdown-item" href="#">Modeling</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Parts
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Basic Parts</a>
+                                <a class="dropdown-item" href="#">Composite Parts</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Software</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Human Practices
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Human Practices</a>
+                                <a class="dropdown-item" href="#">Education</a>
+                                <a class="dropdown-item" href="#">Collaboration</a>
+                                <a class="dropdown-item" href="#">Partnership</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="py-5 container">
+                <h1>Modular Design of Multi-Epitope DREP Vaccines: TNBC Experience</h1>
+                <section id="intro" class="d-flex flex-column align-items-center my-5">
+                    <h2>Introduction</h2>
+                    <h3 class="my-4">Our step-by step approach for the modularity of our pipeline.</h3>
+                    <p>It has been a real controversial issue regarding the selection of the Epitopes used in our
+                        vaccine design. We had to carefully identify and select TNBC Hotspot neoantigens and thereby
+                        analyze the associated mutations of these genes, expressed in the TNBC cases presented.
+                        Accordingly predict the immunogenic T-cell and B-cell epitopes using Custommune. Further steps
+                        in our plan included Validation of these epitopes concerning the use of different computational
+                        aspects to assess their response and degree of immune system enhancement (e.g.: IFN-Gamma
+                        response).
+                    </p>
+                </section>
+                <section id="hotspot" class="d-flex flex-column align-items-center my-5">
+                    <h2>HOTSPOT Neoantigens Retrieval</h2>
+                    <h3 class="my-4">Inspiration</h3>
+                    <p>
+                        During the development of tumors, they obtain mutations that later on give rise to neoantigens
+                        which can be recognized by T cells.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/d/d5/T--AFCM-Egypt--DesignHotspot.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure (1) <br>T-Cell recognizing neoantigen on tumor
+                    </small>
+                    <h3 class="my-4">Main problem</h3>
+                    <p>Cancer cells regardless of their type have hundreds of thousands of neoantigens.</p>
+                    <p>And that enormous diversity limited our ability to develop a “one fits all” drug without doing
+                        very costly measures such as sequencing of whole cancer genomes which was only useful for
+                        personalized neoepitope targeting for that specific patient.</p>
+                    <img src="https://2020.igem.org/wiki/images/9/90/T--AFCM-Egypt--DesignTumorCells.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure (2) <br> Tumor cells obtaining mutations during its development
+                    </small>
+                    <h3 class="my-4">
+                        Our Focus
+                    </h3>
+                    <p>
+                        This year our main focus was on breast cancer and more specifically triple negative breast
+                        (TNBC) cancer subtype. So, we focused on finding a specific group of neoantigens and epitopes
+                        that are highly expressed and preferably limited only to TNBC.
+                    </p>
+                    <h3 class="my-4">
+                        Data retrieval
+                    </h3>
+                    <p>
+                        First we used The Gene expression omnibus (GEO) to search for datasets that contained samples of
+                        patients affected by triple negative breast cancer.
+
+                        Doing so we were able to find 21 datasets listed in figure(6) containing genomic samples of TNBC
+                        patients.
+                    </p>
+                    <p>
+                        Then we were able to retrieve a huge and form a huge dataset from multiple databases in
+                        literature, This dataset contained neoantigens that were associated with all breast cancer
+                        types.
+                    </p>
+                    <p>
+                        After that we collected data about most frequently mutated genes in TNBC from the TCGA.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/7/7b/T--AFCM-Egypt--DesignDataRetrieval.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure (3) <br> Hotspot TNBC neoantigen pipeline</small>
+                    <h3 class="my-4">
+                        Method
+                    </h3>
+                    <p>
+                        These previously mentioned datasets were filtered according to the more vicious traits of The
+                        tumor to know the most expressed genes in these samples ,and then according to logfc & t value
+                        by which we were able to minimize the data in them.
+                    </p>
+                    <p>
+                        Finally using the final 3 datasets we tried to find intersections between them using tools such
+                        as genevenn, and also from literature mining all of which by we detected a list of shared
+                        neoantigens to work on
+                    </p>
+                    <p>
+                        <em>(CD79A,CDH1,NCOA1,PDE4DIP,MYC,JAK1,NCOA2,PICALM,TRRAP,ATRX,MSH6,PRKAR1A,FLI1,MAP2K2,MET,SPEN,TFE3,ARNT,SMARCB1,IKZF1,NR4A3,RUNX1,AR,NTRK1,RBM10,MSH2,MUC1,
+                            Lck, PSA, PAP, MRP3 PTHrP, HNRPL, WHSC2, SART3, CypB, UBE2V, EGFR)</em>
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/9/9d/T--AFCM-Egypt--DesignHotspotDatasets.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure (4) <br>Datasets intersection using Gennvenn tool</small>
+                    <table class="table">
+                        <thead class="table-background">
+                            <tr>
+                                <th scope="col">GeoDataset</th>
+                                <th scope="col">Top Genes</th>
+                                <th scope="col">GeoDataset</th>
+                                <th scope="col">Top Genes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    GSE135565
+                                </th>
+                                <td>SCUBE2 <br>
+
+                                    GRB14 <br>
+
+                                    MPP7 <br>
+
+                                    TPD52 <br>
+                                    MMP16</td>
+                                <td>
+                                    GSE83937
+                                </td>
+                                <td>
+                                    MIR3663HG
+                                    <br>
+                                    FGFR2
+                                    <br>
+                                    ATAD3B
+                                    <br>
+                                    GSTT1
+                                    <br>
+                                    WIPF3
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    GSE27447
+                                </th>
+                                <td>EGR2 <br>
+
+                                    CHRM3 <br>
+
+                                    PTCHD1 <br>
+
+                                    GFRA3 <br>
+                                    EPHA7</td>
+                                <td>
+                                    GSE86839
+                                </td>
+                                <td>
+                                    ADGRF1
+                                    <br>
+                                    AC005219.1
+                                    <br>
+                                    CALB2
+                                    <br>
+                                    NRK
+                                    <br>
+                                    DMBT1
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    GSE59614
+                                </th>
+                                <td>FOS <br>
+
+                                    PMEPA1 <br>
+
+                                    ACAT2 <br>
+
+                                    LSS <br>
+                                    INSIG1</td>
+                                <td>
+                                    GSE88715
+                                </td>
+                                <td>
+                                    EPCAM
+                                    <br>
+                                    DHCR7
+                                    <br>
+                                    KRT15
+                                    <br>
+                                    CREB3L4
+                                    <br>
+                                    CD24
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    GSE79332
+                                </th>
+                                <td>DMBT1 <br>
+
+                                    ACSL5 <br>
+
+                                    IFITM1 <br>
+
+                                    TLR3 <br>
+                                    CTSS</td>
+                                <td>
+                                    GSE90505
+                                </td>
+                                <td>
+                                    CXCL9
+                                    <br>
+                                    MMP1
+                                    <br>
+                                    IL4I1
+                                    <br>
+                                    S100A8
+                                    <br>
+                                    MMP9
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    GSE79721
+                                </th>
+                                <td>ZBTB4 <br>
+
+                                    DENND4B <br>
+
+                                    EVA1A <br>
+
+                                    RNF214 <br>
+                                    BIVM</td>
+                                <td>
+                                    GSE90564
+                                </td>
+                                <td>
+                                    MAGEC2
+                                    <br>
+                                    PDE1C
+                                    <br>
+                                    OR6X1
+                                    <br>
+                                    PDE1C
+                                    <br>
+                                    CFI
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    GSE96653
+                                </th>
+                                <td>C2CD4C <br>
+
+                                    ASB17 <br>
+
+                                    OR10H4 <br>
+
+                                    SH2D3C <br>
+                                    ZNF266</td>
+                                <td>
+                                    GSE95700
+                                </td>
+                                <td>
+                                    TRAPPC10
+                                    <br>
+                                    ITCH
+                                    <br>
+                                    PRRC2C
+                                    <br>
+                                    FAM160B2
+                                    <br>
+                                    STRN3
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    GSE103091
+                                </th>
+                                <td>AFDN <br>
+
+                                    GNAQ <br>
+
+                                    JAK1 <br>
+
+                                    MIR1248 <br>
+                                    TMX2-CTNND1</td>
+                                <td>
+                                    GSE103668
+                                </td>
+                                <td>
+                                    DNAJC22
+                                    <br>
+                                    TPD52L3
+                                    <br>
+                                    ZDHHC11B
+                                    <br>
+                                    DST
+                                    <br>
+                                    ZNF107
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    GSE106100
+                                </th>
+                                <td>DCDC2B <br>
+
+                                    GALR2 <br>
+
+                                    TMPRSS11F <br>
+
+                                    IGBP1P1 <br>
+                                    PIP</td>
+                                <td>
+                                    GSE114269
+                                </td>
+                                <td>
+                                    AFAP1-AS1
+                                    <br>
+                                    GZMB
+                                    <br>
+                                    BIRC3
+                                    <br>
+                                    CXCL13
+                                    <br>
+                                    UBD///GABBR1
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    GSE97342
+                                </th>
+                                <td>NXPH1 <br>
+
+                                    GREM2 <br>
+
+                                    SLC30A2 <br>
+
+                                    SIX2 <br>
+                                    IL17C</td>
+                                <td>
+                                    GSE118539
+                                </td>
+                                <td>
+                                    RBM5-AS1
+                                    <br>
+                                    MARS1
+                                    <br>
+                                    ETFA
+                                    <br>
+                                    FAM151A
+                                    <br>
+                                    TSNARE1
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    GSE88847
+                                </th>
+                                <td>NELL2 <br>
+
+                                    IFIT1 <br>
+
+                                </td>
+                                <td>
+                                    GSE106782
+                                </td>
+                                <td>
+                                    CFHR1
+                                    <br>
+                                    C11orf49
+                                    <br>
+                                    CTDSP1
+                                    <br>
+                                    WDR89
+                                    <br>
+                                    SEPP1
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    GSE114359
+                                </th>
+                                <td>LINC01191 <br>
+
+                                    AC110769.1 <br>
+
+                                </td>
+                            </tr>
+                    </table>
+
+                    <h3 class="my-4">TNBC Neoantigens Retrieval Process</h3>
+                    <p>It has been widely recognized that T-cell epitope prediction is a big challenge because of the
+                        high degree of MHC polymorphism and disparity in the volume of data on various steps encountered
+                        in the generation and presentation of T-cell epitopes in the living systems.</p>
+                    <p>
+                        After searching for the most common TNBC neoantigens through different Datasets and filtering
+                        them according to those related to the Egyptian population, we identified a set of promising
+                        TNBC neoantigens that we worked on.
+                    </p>
+                    <h4 class="my-3">Identifying common mutations in TNBC neoantigens</h4>
+                    <p>We took each neoantigen to be examined in TCGA revealing usual sites of mutation in specific TNBC
+                        cases that were selected under special conditions and circumstances.</p>
+                    <img src="https://2020.igem.org/wiki/images/4/45/T--AFCM-Egypt--DesignHotspotMutation.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure: Showing sequence of antigen selection, neomutation identification
+                        and corresponding epitopes prediction.</small>
+                    <p>TNBC Cases Presentation and neomutation retrieval using GDC Data portal:
+                    </p>
+                    <p>We worked on a group of 173 TNBC cases that have been classified into Four groups, BL1, BL2, M
+                        and LAR.</p>
+
+                    <img src="https://2020.igem.org/wiki/images/d/df/T--AFCM-Egypt--DesignHotspotPathologicalTypes.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure: Representing the total 173 TNBC cases retrieved for further
+                        identification of common neomutations present in each case</small>
+
+                    <p>
+                        Sequence analysis and selection of Immunodominant regions of each TNBC neoantigens using
+                        Custommune:
+                    </p>
+                    <p>
+                        Custommune tool was used to Analyse the DNA sequence of these neoantigens and predict Candidate
+                        epitopes and screening them for a highly ranked recognition score by multiple HLA alleles.
+                    </p>
+                    <p>
+                        Custommune Simulates predicted escape mutations and calculates the HLA-affinity for mutated
+                        epitopes Providing a final, ready-to-use list of epitopes. It also builds a Consensus sequence
+                        of each Input of TNBC neoantigens that is beneficial later on for B-cell epitopes prediction.
+                    </p>
+                </section>
+                <section id="Neoepitope-Discovery" class="d-flex flex-column align-items-center my-5">
+                    <h2>Neoepitope-Discovery and Computational Validation.</h2>
+                    <img src="https://2020.igem.org/wiki/images/4/4a/T--AFCM-Egypt--DesignNeopitope.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure: Showing in-silico approaches and computational tools for epitope
+                        prediction.
+                    </small>
+                </section>
+                <section id="identificationEpitops" class="d-flex flex-column align-items-center my-5">
+                    <h2>Identification Of MHC I & MHC II Epitopes And Their Prediction Using Custommune</h2>
+                    <img src="https://2020.igem.org/wiki/images/a/a3/T--AFCM-Egypt--DesignNeoIdentification.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure: HTL & CTL Epitopes PredictionUsing Custommune.
+                    </small>
+                    <h3>
+                        Neo-epitopes discovery by Custommune
+                    </h3>
+                    <p>
+                        Custommune predicts the T-cell epitopes of the presented neomutations and how it ranks these
+                        epitopes based on their custoscore and an epitope scoring method, called the <b>IC50</b>, in
+                        addition
+                        to other special filtration and scoring parameters, as shown in the equation below:
+                    </p>
+                    <p><b>S = 10000 * 〖"(IC50)" 〗^(-1) - DFIRE + EscapeM *500 + CScore *1000 + LocationScore * 500 –
+                            SDaffinities + DOverlap *500</b></p>
+                    <p>Custommune assesses the Location Score of the probable mutations in each epitope and locates them
+                        in the evolutionary conserved regions, giving them C-score, as well as analyzing the previously
+                        reported escape mutation for each peptide. After that, custommune calculates D-Overlap through
+                        comparing these escape mutations with Literature and other Clinical trials.</p>
+                    <p>Eventually, it estimates the <b>Standard-Deviation affinity</b> and docking of each epitope to a
+                        set of
+                        HLA-alleles by Affinity robustness that we call the <b>D-Fire score.</b>
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/c/c9/T--AFCM-Egypt--DesignHotspotNeoDiscovery.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure: Predicted Cytotoxic T-Cell epitopes of the 17 TNBC antigens.
+                    </small>
+                    <img src="https://2020.igem.org/wiki/images/0/0e/T--AFCM-Egypt--DesignHotspotNeoDiscovery2.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure: Predicted Helper T-Cell epitopes of the 17 TNBC antigens.
+                    </small>
+                </section>
+                <section id="prediction-linear" class="d-flex flex-column align-items-center my-5">
+                    <h2>Prediction of linear B-cell epitopes</h2>
+                    <p>
+                        Anticipating B-cell antigenicity is useful and urgent in our circuit plan. Be that as it may, it
+                        is confounded to anticipate B-cell epitopes by computational apparatuses. Now and then,
+                        characterizing a T-cell epitope may bring about the ID of a B-cell epitope, since B-cell
+                        epitopes have appeared to colocalize with T-assistant epitopes. Utilizing in-silico procedures
+                        and B-cell epitope forecast instruments, we had the option to get excellent b-cell epitopes from
+                        IEDB.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/3/31/T--AFCM-Egypt--DesignNeoPrediction.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure: Illustrating the steps of B-cell epitopes retrieval and analysis
+                        using IEDB.
+                    </small>
+                    <p>
+                        Custommune analyzes the DNA sequence and gives us Consensus sequence by which we can predict the
+                        B-cell epitopes via Random forest algorithm using IEDB that is trained on both epitope and
+                        Non-epitope A.A. sequence and show us here with the yellow color above a threshold of 0.5, the
+                        promising B-Cell epitopes compatible with our vaccine .
+                    </p>
+                    <p>
+                        After retrieving the Consensus sequence from custommune, it's put into iedb.com to obtain the
+                        predicted linear peptides for B cells then evaluating them to be added to our circuit.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/b/b3/T--AFCM-Egypt--DesignNeoPredictionEval.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure: Evaluating the score of predicted B-cell Linear peptides using
+                        IEDB.
+                    </small>
+                </section>
+                <section id="validation" class="d-flex flex-column align-items-center my-5">
+                    <h2>Validation of the Epitope prediction algorithm “Custommune” using Published Experimental &
+                        Clinical Data.
+                    </h2>
+                    <img src="https://2020.igem.org/wiki/images/3/30/T--AFCM-Egypt--DesignNeoIteration.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure: This (Design-Build-Test) Cycle Illustrates the validation steps
+                        for epitopes prediction algorithm through Integrated practices.
+                    </small>
+                    <p>
+                        The way that peptide-MHC complexes stimulates the adaptive immune response by producing
+                        clonotypic T cells illustrates the significance of playing out various measures to more readily
+                        characterize the role of different immunogenic peptides. This in turn emphasizes the importance
+                        of utilizing HLA-transgenic mouse lines over in silico or in vitro methods to validate the
+                        previously predicted peptide epitopes.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/0/01/T--AFCM-Egypt--DesignNeoInVivo.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure: Experimental correlation and Validation of MUC1 epitopes
+                        immunogenicity
+                    </small>
+                    <h3>Evaluation of epitopes immunogenicity and cytotoxicity using Pearson Correlation Coefficient
+                    </h3>
+                    <p>
+                        Calculating R-value of our predicted epitopes using Pearson correlation coefficient, we plotted
+                        a correlation between results for IFNγ Elispots showing CD8-specific MUC1 responses and IC50 of
+                        the corresponding peptide pool (RKNYGQLDI-RRKNYGQLDI-RRKNYGQLDIF-RRKNYGQLDIFPARD) from
+                        Custommune.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/4/4b/T--AFCM-Egypt--DesignNeoCorrelation.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Other Neoantigens:</small>
+                    <p>
+                        <strong>Implication for immunomonitoring of new (Lck, PSA, PAP, and MRP3 PTHrP, HNRPL, WHSC2,
+                            SART3, CypB, UBE2V and EGFR) epitopes in vitro and in clinical trials</strong>
+                    </p>
+                    <p>
+                        We collected data about a mixture of 19-peptides obtained from an early phase II clinical trial
+                        on 14 advanced metastatic triple-negative breast cancer (mTNBC) patients refractory to systemic
+                        chemotherapy to develop a new type of cancer vaccine.
+                    </p>
+                    <p>
+                        In this trial the expression levels of the 11 vaccine antigens that code these 19 peptides were
+                        examined by IHC staining of primary breast cancer (n = 20, including 5 TNBC) and metastatic
+                        breast cancer tissues (n = 20, including 5 TNBC).
+                    </p>
+                    <p>
+                        From that review we noticed that 4 of these peptide epitopes (PTHrP, HNRPL, WHSC2, and SART3 )
+                        antigens were expressed in all breast cancer detected.
+                    </p>
+                    <p>
+                        While CypB, UBE2V, EGFR, Lck, and MRP were communicated in 70%, 60%, half, 10%, and 0% of
+                        primary tumors, and 100%, 100%, 30%, 10%, and 10% of metastatic tissue, individually.
+                        Interestingly, neither PSA nor PAP was expressed in any breast cancers tested.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/9/95/T--AFCM-Egypt--DesignReportedExperimental.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure: Early phase II clinical study testing 19‐peptide cancer vaccine monotherapy on 14
+                        advanced metastatic triple‐negative breast cancer (mTNBC) patients. DOI
+                        10.1111/cas.14510</small>
+                    <p>
+                        In addition, It was reported that Lck, PSA, PAP, and MRP3 were expressed in breast cancer
+                        tissues, although the frequency of expression was lower than that of other TAAs.
+                    </p>
+                    <h3>Our Final Proposed Vaccines’ structure</h3>
+                    <p>
+                        We implemented these epitopes into one Confined Design. We categorized all the epitopes with
+                        their linkers that we collected into 3 vaccine models then we added to them essential fragments
+                        that include
+                    </p>
+                    <p>
+                        An SGP-promotor A Beta-Defensin adjuvant, Pan HLA-DR binding epitope (PADRE), our sets of
+                        epitopes for each Class and finally an innate immunity stimulant Heat Shock Proteins, all linked
+                        by our optimized Linkers
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/0/0c/T--AFCM-Egypt--DesignImmuneModulation.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure: Showing Immune-modulating adjuvant B-Defensin and PADRE (Pan HLA-DR epitopes)
+                        sequence were added with epitopes sequence to enhance the immunogenicity. All the epitopes,
+                        adjuvants and PADRE sequence were joined by linkers.
+                    </small>
+                </section>
+                <section id="computation" class="d-flex flex-column align-items-center my-5">
+                    <h2>Computational Simulation of & the Immune profiles of our Final 3 forms of TNBC Vaccines
+                        according to their IFN-γ response.
+                    </h2>
+                    <img src="https://2020.igem.org/wiki/images/6/6a/T--AFCM-Egypt--DesignNeoIteration2.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure: This (Design- Build-Test) Cycle depicts the Computational
+                        assessment and Immunogenicity validation of the proposed vaccine versions.
+                    </small>
+                    <p>
+                        We Scanned the IFN-gamma response of our proposed vaccine Isoforms according to the Support
+                        Vector Machine algorithm, or what we call the SVM-Score.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/6/65/T--AFCM-Egypt--DesignNeoAssessment.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure: Percentage of epitopes predicted to have positive INF response.
+                    </small>
+                    <p>
+                        We also estimated and assessed the immunogenicity and efficacy of each one of our 3 proposed
+                        vaccines using the C-IMMSIM simulation model to describe both Humoral and Cellular response of
+                        our presented epitopes at a mesoscopic scale.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/2/20/T--AFCM-Egypt--DesignNeoDiagrams.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure: These diagrams show serum Immunoglobulins, including IgM and IgG
+                        isotypes, where the 3rd vaccine was found to be of highest Immunoglobulins levels.
+                    </small>
+                    <p>
+                        We can also observe the cytokines & Interleukins, released by each version, noticing that the
+                        2nd vaccine is associated with the least IL-2 Levels , even less than the other 2 vaccines.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/3/3b/T--AFCM-Egypt--DesignNeoB-Cell.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure: Analyzing the total count of B-Lymphocytes, that are classified
+                        here into Memory and Not-memory B-Cells.
+                    </small>
+                    <p>
+                        The 1st vaccine recorded a remarkable increase in Ig-M secreting plasma cells, reaching its peak
+                        within one week of injection.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/d/d3/T--AFCM-Egypt--DesignNeoCd4t.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure: This plot shows the total and memory T-helper Cells that are
+                        classified into Active, Resting, Anergic and Duplicating CD4-T cells, with no difference among
+                        the 3 versions. But regarding the Regulatory T-Cell Count. The 2nd Vaccine shows the least
+                        amount of Active T-reg.Cells expressed.
+                    </small>
+                    <p>
+                        Meanwhile, Studying the difference among the 3 vaccines, regarding the stimulated CD8-Cell
+                        populations, MQs , NKCs and Dendritic cells, we found <b>no significant variation</b> among
+                        them.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/d/dd/T--AFCM-Egypt--DesignNeoCD8T.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure: -CD8 T-cytotoxic lymphocytes count. Total and memory shown. <br>
+                        -CD8 T-cytotoxic lymphocytes count.per entity-state.
+                    </small>
+                    <img src="https://2020.igem.org/wiki/images/2/24/T--AFCM-Egypt--DesignNeoNaturalKiller.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure: -Natural Killer cells (total count). <br>
+                        -Macrophages:Total count, internalized, presentation on MHC class-II, active and resting.
+                    </small>
+                    <img src="https://2020.igem.org/wiki/images/8/8e/T--AFCM-Egypt--DesignNeoDendritic.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure: -Dendritic cells. DC can present antigenic peptides on both MHC
+                        class-I and class-II molecules. The curves show the total number broken down to active, resting,
+                        internalized and presenting the antigen. <br>
+                        -Epithelial cells. Total count broken down to active, virus-infected and presenting on class-I
+                        MHC .
+                    </small>
+
+                </section>
+                <section id="linker" class="d-flex flex-column align-items-center my-5">
+                    <h2>Linker Optimization</h2>
+                    <h3>Designing A Multi-Epitope Based Vaccine Construct.</h3>
+                    <img src="https://2020.igem.org/wiki/images/f/fe/T--AFCM-Egypt--DesignLinkerSelectedPep.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">Figure (1): selected peptide fragments fused to each other by (EAAAK)3 & (GPGPGPG) linkers.
+                    </small>
+                    <h3>Exploitation of in-silico approaches for Our Vaccine design</h3>
+                    <img src="https://2020.igem.org/wiki/images/9/9d/T--AFCM-Egypt--DesignLinkerIteration5.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">
+                        This (Design-Build-Test) Cycle Shows our workflow through structural refinement of our Vaccine
+                        based on Linker optimization.
+                    </small>
+                    <p>Implementation of vaccination as a tool in fighting wide spread diseases has resulted in
+                        substantial strides in the combat against many types of cancer. The one we focused on was the
+                        Triple Negative Breast Cancer (TNBC).</p>
+                    <p>
+                        The main concern was finding the best immunogenic epitopes for our DNA vaccine plan, ailment
+                        counteraction, finding, and therapy.
+                    </p>
+                    <p>In our project, we started with a collection of absolutely specific epitopes for TNBC (triple –ve
+                        breast cancer) from Custommune tool which is an automated tool for designing personalized and
+                        population-targeted peptide vaccines, and arranged it with linkers.</p>
+                    <p>
+                        Pepfold3.5 was used to optimize linker selection for these peptide epitopes.
+                    </p>
+                    <h3>
+                        Linker selection parameters
+                    </h3>
+                    <p>
+                        We started by collecting a group of linkers from Igem Registry for Protein domains/Linker.
+                    </p>
+                    <p>
+                        Utilizing pepfold3.5 in view of another Hidden Markov Model problematic compliance testing
+                        approach empowered us to choose the most fitting linker for every 2 progressive epitopes, as
+                        indicated by certain linker choice parameters, including:
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/5/51/T--AFCM-Egypt--DesignLinkerITerminalamino.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        This offered a likelihood to create up-and-coming adaptations of peptide-protein edifices going
+                        through further refinement to come to the most appropriate linker for every 2 arrangements of
+                        peptides.
+                    </p>
+                    <small class="text-center">Figure: shows Pepfold3.0 best model of linker optimization for peptide epitopes, where
+                        (EAAAK)3-represented by green Helix- works as the best linker fitting both Red-coloured strand
+                        FLSFHISNL & magenta coloured strand KFLGLSNIKF .</small>
+                    <img src="https://2020.igem.org/wiki/images/5/56/T--AFCM-Egypt--DesignLinkerITermialPepfold.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <h3>Assessment of linker optimization using PEPFOLD 3.5</h3>
+                    <p>
+                        As a vital component of recombinant fusion proteins, linkers have appeared of great significance
+                        within the development of steady, bioactive fusion proteins. They are classified into 3
+                        categories concurring to their structures: rigid linkers, inflexible linkers, and in vivo
+                        cleavable linkers.
+                    </p>
+                    <p>
+                        We took all of these epitopes and linker sequences separately in PEP-FOLD 3.5 tool –to be
+                        analyzed- which is an approach aimed at predicting peptide structures from amino acid sequences.
+                        Starting from a single amino acid sequence from 5 to 50 standard amino acids, PEP-FOLD3 runs a
+                        series of 100 simulations.
+                    </p>
+                    <p>
+                        Each simulation samples a different region of the conformational space. It returns an archive of
+                        all the models generated, the detail of the clusters and the best conformation of the 5 best
+                        clusters. After that, we determined the best sequence with the best linker depending on sOPEP
+                        energy and TM-score.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/8/8f/T--AFCM-Egypt--DesignLinkerITermialStability.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        The less the sOPEP of the sequence, the more stable to be used as a linker in our project. For
+                        instance, this attached picture shows several epitopes with linkers. The sequence
+                        (FLSFHISNLEAAAKEAAAKEAAAKFLGLSNIKF) has the least sOPEP among the whole epitopes equal -64.0417,
+                        so it is the most useful one.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/7/7f/T--AFCM-Egypt--DesignLinkerITermialTable.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <small class="text-center">
+                        Figure: Evaluating sOPEP energy & TM-score of each linker using PEPFOLD3.5
+                    </small>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -6,37 +6,70 @@ body{
     background: rgb(241,181,208);
     background: linear-gradient(90deg, rgba(241,181,208,1) 0%, rgba(213,108,157,1) 100%);
 }
+html {
+    scroll-behavior: smooth;
+  }
 nav{
     font-weight: bold;
     color: #fff;
+}
+h1{
+    color: rgb(235, 235, 235)!important;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center!important;
 }
 .nav-link{
     color: #fff;
 }
 .navbar-fixed-left {
+    top: 0!important;
     position: fixed;
     height: 100vh;
-    width: 227px;
-    background-image: url('../assets/pink-ribbons.jpg');
+    width: 194px;
+    background-image: url('https://2020.igem.org/wiki/images/2/2e/T--AFCM-Egypt--sticky-bar-1.png');
     background-position: center;
     background-size: contain;
     backdrop-filter: blur(2px);
     filter: drop-shadow(8px 3px 80px rgb(174, 172, 172));
+    overflow: scroll;
 }
-  
-.side-nav-brand{
-    height: 150px;
+.navbar-fixed-left::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.navbar-fixed-left::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.navbar-fixed-left::-webkit-scrollbar-thumb
+{
+	background-color: #e6246e;
+	border: 2px solid #555555;
 }
 .side-nav-items li{
     text-align: center;
-    background-color: rgba(239, 214, 215, .5);
-    padding: 7px 0px;
-    border-radius: 9px;
+    background-color: #e6246e;
+    padding: 1.5px 0px;
+    border-radius: 15px;
     cursor: pointer;
     margin-top: 10px;
+    list-style: none!important;
 }
-.side-nav-items li a{
-    color: #3d3d3d;
+.side-nav-items{
+    margin-top: 150%!important;
+}
+.side-nav-items a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.side-nav-items a:hover{
+    color: #e6246e;
     text-decoration: none;
 }
 .side-nav-items li:hover{
@@ -89,9 +122,15 @@ section h2{
     text-align: center;
 }
 section p{
-    color: black;
-    text-align: center;
-    font-size: .9rem;
+    color: rgb(255, 255, 255)!important;
+    text-align: center!important;
+    font-size: 1rem!important;
+    opacity: .95!important;
+    margin-bottom: 25px!important;
+}
+.resources p{
+    text-align: left!important;
+    font-size: .8!important;
 }
 .right-curve{
     position: absolute;
@@ -216,11 +255,13 @@ section .section-title {
     text-transform: uppercase;
 }
 
-#team .card {
+.team .card {
     border: none;
     background: #d8b2c6;
 }
-
+.team .card-text{
+    text-align: center;
+}
 .image-flip:hover .backside,
 .image-flip.hover .backside {
     -webkit-transform: rotateY(0deg);
@@ -318,9 +359,9 @@ section .section-title {
 /*engineering*/
 
 .table-background{
-    background-color: #d56d9e;
+    background-color: #d56d9e!important;
 }
 
 table a{
-    color: rgb(71, 71, 71);
+    color: rgb(71, 71, 71)!important;
 }

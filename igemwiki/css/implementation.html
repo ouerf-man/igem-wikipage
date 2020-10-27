@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/T--AFCM-Egypt--style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="navbar-inverse navbar-fixed-left">
+                <ul class="side-nav-items py-5 px-2">
+                    <a href="#assembly">
+                        <li>
+                            Assembly of plasmids
+                        </li>
+                    </a>
+                    <a href="#epitope">
+                        <li>
+                            Multi-epitope vaccine optimization
+                        </li>
+                    </a>
+                    <a href="#norGate">
+                        <li>
+                            Nor Gate testing
+                        </li>
+                    </a>
+                    <a href="#sgp">
+                        <li>
+                            Sgp Optimization
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <nav class="navbar navbar-expand-lg pl-4 pt-3 pr-4 mb-5 container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img class="navbar-toggler-icon d-inline"
+                        src="https://2020.igem.org/wiki/images/d/d3/T--AFCM-Egypt--navbarbutton.jpeg" alt="">
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Team
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="team.html">Team members</a>
+                                <a class="dropdown-item" href="#">Attributions</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Project
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Description</a>
+                                <a class="dropdown-item" href="#">Engineering</a>
+                                <a class="dropdown-item" href="#">Contribution</a>
+                                <a class="dropdown-item" href="#">Implementation</a>
+                                <a class="dropdown-item" href="#">Entrepreneurship</a>
+                                <a class="dropdown-item" href="#">Modeling</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Parts
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Basic Parts</a>
+                                <a class="dropdown-item" href="#">Composite Parts</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Software</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Human Practices
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Human Practices</a>
+                                <a class="dropdown-item" href="#">Education</a>
+                                <a class="dropdown-item" href="#">Collaboration</a>
+                                <a class="dropdown-item" href="#">Partnership</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="py-5 container">
+                <h1>Proposed implementation</h1>
+                <section id="assembly" class="d-flex flex-column align-items-center my-5">
+                    <h2>Assembly of plasmids</h2>
+                    <p>
+                        First we decided to assemble two variants of our vaccine, the first one to be made using Equine
+                        Encephalitis Virus (EEV) Non Structural Protein replicon parts and the second using Semliki
+                        Forest Virus (SFV) parts with minor differences in design.
+
+                        <br>
+                        We decided to use Golden Gate assembly cloning system in the assembly of EEV plasmids while
+                        using Simple restriction-enzyme ligation system in SFV Plasmids.
+
+                        <br>
+                        We separated the circuit to 8 fragments
+
+                        <br>
+                        The first fragment contains Origin of replication and the AmpR and promoter.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/3/35/T--AFCM-Egypt--ImplementationOri.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <p>The second fragment contains CMV promoter , FF4 binding site & mir126 binding site.</p>
+                    <img src="https://2020.igem.org/wiki/images/8/81/T--AFCM-Egypt--ImplementationCMV.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        The 3rd to 6th fragments contained NSP1,NSP2,NSP3,NSP4 in that order with every fragment
+                        containing only one NSP.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/9/9e/T--AFCM-Egypt--ImplementationNPS1.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        The 7th fragment contained SubGenomic promoter, B-defensin, Badri and most importantly the
+                        chosen epitopes to our vaccine.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/2/2f/T--AFCM-Egypt--ImplementationSGP30.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <p>The 8th and final fragment contained reporter genes and enhanced p2a+gsg And when designing our
+                        reporter gene, we found that we could enhance its function by adding p2a cleavage site
+                        separating the vaccine from the reporter gfp. And even further more increase its cleavage
+                        ability by adding 3xflag & v5tag upstream of it.</p>
+                    <img src="https://2020.igem.org/wiki/images/c/ca/T--AFCM-Egypt--ImplementationV5Tag.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        In order to choose between multiple design variations and select the best and most efficient one
+                        we assembled multiple plasmid designs to experimentally & computationally compare between them
+                        due to the lack of lab availability due to Covid-19 pandemic.
+                    </p>
+                    <p>
+                        The factors we had to compare between were :-
+                    <ol type="I">
+                        <li>Different versions of Multi-Epitope vaccine</li>
+                        <li>Subgenomic promoter optimization</li>
+                        <li>Off switch variants & the efficacy of mir-126</li>
+                    </ol>
+                    </p>
+                    <h3 id="epitope">
+                        Multi-epitope vaccine optimization:
+                    </h3>
+                    <p>
+                        First we are planning to design multiple versions of our vaccines to validate the best form of
+                        the vaccine to be used as personalized immunization techniques according to using pSFV3 plasmid
+                        assembled with different versions of the vaccine using in them SGP15 as the Subgenomic promoter.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/5/57/T--AFCM-Egypt--ImplementationPSFV3.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <p>Multi-epitope Vaccine V1
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/0/0d/T--AFCM-Egypt--ImplementationPSFV3%2BSGP.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>Multi-epitope vaccine v2</p>
+                    <img src="https://2020.igem.org/wiki/images/8/82/T--AFCM-Egypt--ImplementationPSFV3-SGP.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>Multi-epitope vaccine v3</p>
+                    <h3 id="norGate">Nor Gate testing & Mir126 characterization</h3>
+                    <p>In efforts to characterize mir126 effects we are planning to assemble two plasmids one with the
+                        mir126 binding site and one without it to experimentally show the effectiveness it adds to the
+                        circuit.</p>
+                    <img src="https://2020.igem.org/wiki/images/6/69/T--AFCM-Egypt--ImplementationPEEV-SGP.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <img src="https://2020.igem.org/wiki/images/8/83/T--AFCM-Egypt--ImplementationPEEV-SGP2.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <h3 id="sgp">Sgp Optimization</h3>
+                    <p>Finally we are planning to assemble 2 plasmids to experimentally decide which subgenomic promoter
+                        would show higher expression abilities in which would be identified using reporter genes.</p>
+                    <img src="https://2020.igem.org/wiki/images/6/69/T--AFCM-Egypt--ImplementationPEEV-SGP.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <img src="https://2020.igem.org/wiki/images/6/6d/T--AFCM-Egypt--ImplementationPEEV-SGP4.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        However using mathematical modelling and simulation techniques we found out that SGP15 had
+                        higher expression values which was confirmed from literature presented in Figure16 to be
+                        confirmed after experimental testing .
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/2/25/T--AFCM-Egypt--ImplementationFigure16.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <small>Figure 16.Sgp 30 expression vs SGP15</small>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

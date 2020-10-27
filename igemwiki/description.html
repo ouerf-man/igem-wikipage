@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/T--AFCM-Egypt--style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="navbar-inverse navbar-fixed-left">
+                <ul class="side-nav-items py-5 px-2">
+                    <a href="#description">
+                        <li>
+                            Description
+                        </li>
+                    </a>
+                    <a href="#rationale">
+                        <li>
+                            Dataset Gathering
+                        </li>
+                    </a>
+                    <a href="#dataset">
+                        <li>
+                            Dataset Gathering
+                        </li>
+                    </a>
+                    <a href="#dnaVaccine">
+                        <li>
+                            DNA vaccine circuit
+                        </li>
+                    </a>
+                    <a href="#methodology">
+                        <li>
+                            Methodology Guidelines
+                        </li>
+                    </a>
+                    <a href="#conclusion">
+                        <li>
+                            Conclusion
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <nav class="navbar navbar-expand-lg pl-4 pt-3 pr-4 mb-5 container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img class="navbar-toggler-icon d-inline"
+                        src="https://2020.igem.org/wiki/images/d/d3/T--AFCM-Egypt--navbarbutton.jpeg" alt="">
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Team
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="team.html">Team members</a>
+                                <a class="dropdown-item" href="#">Attributions</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Project
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Description</a>
+                                <a class="dropdown-item" href="#">Engineering</a>
+                                <a class="dropdown-item" href="#">Contribution</a>
+                                <a class="dropdown-item" href="#">Implementation</a>
+                                <a class="dropdown-item" href="#">Entrepreneurship</a>
+                                <a class="dropdown-item" href="#">Modeling</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Parts
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Basic Parts</a>
+                                <a class="dropdown-item" href="#">Composite Parts</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Software</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Human Practices
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Human Practices</a>
+                                <a class="dropdown-item" href="#">Education</a>
+                                <a class="dropdown-item" href="#">Collaboration</a>
+                                <a class="dropdown-item" href="#">Partnership</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="py-5 container">
+                <h1>Project Description</h1>
+                <section id="description" class="d-flex flex-column align-items-center my-5">
+                    <p>In Egypt, breast cancer is the most prevalent malignancy and leading cause of cancer death among
+                        women around the world. According to Globocan 2018, the number of new cancer cases is 128892
+                        which represents a percentage of <b>0.1297%</b> of the total population. In both sexes and all
+                        ages,
+                        the number of new breast cancer cases is 23081 with a percentage of <b>(17.9%)</b> of total
+                        cancer
+                        cases as it lies in the second rank of the most incident cancers in Egypt after liver cancer as
+                        shown in Graph (1). The number of new cases among females is 23081 with a percentage of 35.1% of
+                        total cancers among females as illustrated in Graph <strong>(2).(1),(3)</strong>
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/8/88/T--AFCM-Egypt--description-graph1.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        Triple-negative breast cancer (TNBC) is an aggressive subtype of breast cancer that does not
+                        express the genes for estrogen receptor (ER), progesterone receptor (PR) and HER2/neu.(2). To
+                        get to know all the most common neoantigens related to TNBC in Egypt, we started by Dataset for
+                        all Cancer-Associated Antigens (TAAs). Neoantigens related to breast cancer were then selected
+                        and filtered to obtain a new dataset of neoantigens expressed specifically in TNBC which were
+                        then compared to the Egyptian population.
+                    </p>
+                    <p>
+                        DNA Vaccination is a direct insertion of a plasmid containing a DNA sequence encoding the
+                        antigen(s) to which the immune response is obtained and depending on the in-situ generation of
+                        the target antigen into the appropriate tissues. This approach provides many possible advantages
+                        compared with conventional approaches, including activation of both B- and T-cell responses,
+                        increased vaccine safety, absence of any infectious agent and relative ease of manufacturing on
+                        a wide scale. That is why the team is concerned with innovating a multi-epitope DNA vaccine for
+                        TNBC. <b>(4),(5),(6)</b>
+                    </p>
+                    <p class="font-weight-bold text-danger">
+                        Notice: parts in our range for this season have been created as a part of our Phase I design of
+                        our project. These parts HAVE NOT been tested or characterized in the lab due to
+                        COVID-19-related precautionary measures. We have enriched our new parts pages with data from
+                        literature and results from our modeling and simulations. If you are intending on using this
+                        part or others in our range, please keep in mind these limitations and update these parts with
+                        data from your experimentation. Feel free to reach us at: igem.afcm@gmail.com for further
+                        inquiries.
+                    </p>
+                </section>
+                <section id="rationale" class="d-flex flex-column align-items-center my-5">
+                    <h2>Rationale</h2>
+                    <p>
+                        Immunotherapy is a promising alternative for traditional chemotherapies and treatment options
+                        for
+
+                        triple-negative breast cancer.(28)
+
+                        Continuous Ongoing studies and clinical trials may show more evidence for the effectiveness of
+                        Immunotherapeutic approaches. Immunotherapy can be very expensive we are talking about costs
+                        that may reach over than $100,000 per year is frequently secured by health insurance, but
+                        patients still need to deal with Surgery and other cancer medications which add more to the
+                        financial predicament of rising out-of-pocket costs.(23)
+                    </p>
+                    <h3>Reason behind choosing Breast cancer, and why TNBC in particular?</h3>
+                </section>
+                <section id="dataset" class="d-flex flex-column align-items-center my-5">
+                    <h2>Dataset gathering
+                    </h2>
+                    <p>
+                        TNBC Patients' DNA sequences were retrieved from NCBI database consequently, all the candidate
+                        epitopes were analysed using Custommune analysis tools then filtered and Screened for highly
+                        ranked recognition score by multiple HLA alleles. Eventually, we Perform docking (DFIRE score)
+                        of the HLA-epitope binding to provide a final antibody epitope prediction. <b>(7)</b>
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/e/e8/T--AFCM-Egypt--description-dataGathering.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                </section>
+                <section id="dnaVaccine" class="d-flex flex-column align-items-center my-5">
+                    <h2>DNA vaccine circuit
+                    </h2>
+                    <p>
+                        Multi-epitope DNA vaccine to combat the TNBC is designed using immunoinformatics approach,
+                        through the fusion of multiple dendritic cell epitopes presenting them to CD4 (+) T cells that
+                        once become activated will produce cytokines and can help activate antibody producing B cells,
+                        therefore Dendritic cells sequester antigenic epitopes acting as a bridge between innate and
+                        adaptive immunity, helper, cytotoxic and B-cell epitopes and adjuvant.<b>(8),(9),(10)</b>. These
+                        crucial components of the newly constructed TNBC DNA vaccine were conjugated using proper
+                        Linkers as simulated in fig (1). This vaccine was subsequently tested for different
+                        physicochemical characteristics and examined by molecular dynamics simulation tools for
+                        structure refinement, safety insurance, efficacy, and Validity.
+
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/c/c7/T--AFCM-Egypt--description-DNACircuit.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                </section>
+                <section id="methodology" class="d-flex flex-column align-items-center my-5">
+                    <h2>Methodology Guidelines
+                    </h2>
+                    <p>
+                        This year, our team is creating novel DNA vaccination platform aims as an enhanced
+                        immunotherapeutic approach targeting (<strong><em>TNBC</em></strong>) using a combination of
+                        neatly selected multiple
+                        neo-epitopes conjugated using proper linkers that were optimized according to certain linker
+                        selection parameters constructing a SynBio design that relies on natural self-replicating viral
+                        abilities of RNA replicons delivered in logically optimized DNA circuits, therefore creating a
+                        DNA-launched RNA Replicons (<strong><em>DREP</em></strong>).<b>(13)</b>
+                    </p>
+                    <p>
+                        The platform utilizes the inherent self-amplification ability of RNA-replicons to ensure
+                        enhanced neo-antigen uptake and presentation leading to the mounting of efficient cellular and
+                        humoral immune responses against TNBC. Embedded with optimized subgenomic regulation and
+                        linker-peptides alongside glycine-alanine repeats (GAr), a miRNA-based immune evasion mechanism
+                        and an OFF-switch, our platform is predicted to be highly safe and efficient through
+                        experimentally-driven mathematical simulations.<b>(14),(15)</b>.
+                    </p>
+                    <p>
+                        Immune-modulating adjuvant (<strong><em>Beta-Defensin</em></strong>), Pan HLA-DR epitopes
+                        (<strong>PADRE</strong>) and Heat Shock protein
+                        (<strong>HSP</strong>) sequence were also added with epitopes sequence to enhance the
+                        immunogenicity. All the
+                        epitopes, adjuvants and PADRE sequence were joined by linkers. In the construction of
+                        multiepitope vaccines <strong>EAAK linker</strong> is found to increase stability and reduce
+                        connection with
+                        other protein areas with efficient detachment. There is a possibility that the immunogenicity
+                        could increase with an adjuvant. Based on the interactions’ compatibility HTL, CTL and B-Cell
+                        epitopes were merged together sequentially with <strong>GPGPG, AAY</strong> and
+                        <strong>KK</strong> linkers, respectively. <b>(16)</b>
+                    </p>
+                    <p>
+                        Mathematical modelling-based simulation proofed potential therapeutic immunity of our approach.
+                        Eventually, our vaccine will be sequestered by DCs to present the hotspots of epitopes predicted
+                        by Custommune to CTLs and T-Helper cells that once become activated, will produce cytokines and
+                        activate antibody producing B cells, thus acting as a bridge between innate and adaptive immune
+                        response to combat TNBC. <b>(17)</b>
+
+                        Using various sets of computational validation tools, we were able to assess the immunogenicity
+                        of our final proposed Vaccine models.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/1/17/T--AFCM-Egypt--description-guideline.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                </section>
+
+                <section id="conclusion" class="d-flex flex-column align-items-center my-5">
+                    <h2>
+                        Conclusion
+                    </h2>
+                    <p>
+                        Narrowing the scope to choose the frequent neoepitopes in Egyptian patients with TNBC shows that
+                        there is no need for the traditional methods of whole exome sequencing to save money and time.
+                        In addition to the advantages in using them in <b>Multi-epitope DNA-replicon based vaccine</b>
+                        which
+                        has a significant therapeutic role in stimulating the immune response to the neoplastic cells
+                        and linking between innate and adaptive immune system through presenting the antigen on DCs
+                        surface which activates the adaptive immune system especially CTLs.
+
+
+                    </p>
+                </section>
+                <section id="literature" class="d-flex flex-column align-items-center my-5 resources">
+                    <h2>
+                        Literature Cited
+                    </h2>
+                    <ol>
+                        <li>
+                            <p>
+                                World Health Organization. Global Health Observatory. <br> Geneva: World Health
+                                Organization;
+                                2018. who.int/gho/database/en/. Accessed June 21, 2018.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Uscanga-Perales, G., Santuario-Facio, S., & Ortiz-López, R. (2016, October 19). Triple
+                                negative breast cancer: Deciphering the biology and heterogeneity. Retrieved October 25,
+                                2020, from https://www.sciencedirect.com/science/article/pii/S1665579616300667
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Ferlay J, Colombet M, Soerjomataram Iet al. Global and Regional Estimates of the
+                                Incidence and Mortality for 38 Cancers: GLOBOCAN 2018. Lyon: International Agency for
+                                Research on Cancer/World Health Organization; 2018.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Thun MJ, Henley SJ, Travis WD. Lung cancer. In: Thun MJ, Linet MS, Cerhan JR, Haiman CA,
+                                Schottenfeld D, eds. Cancer Epidemiology and Prevention. 4th ed. New York, NY: Oxford
+                                University Press; 2018:519‐542.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Garmory HS, Brown KA, Titball RW. DNA vaccines: improving expression of antigens.
+                                Genetic vaccines and therapy. 2003 Dec 1;1(1):2.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Hobernik, Dominika, and Matthias Bros. “DNA Vaccines-How Far From Clinical Use?.”
+                                International journal of molecular sciencesvol.19,11 3605. 15 Nov. 2018,
+                                doi:10.3390/ijms19113605
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Tarek, M. (2020, January 1). Custommune: a web tool to design personalized and
+                                population-targeted vaccine epitopes. MedRxiv. <br>
+                                https://www.medrxiv.org/content/10.1101/2020.04.25.20079426v1
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Nezafat, Navid, et al. "Designing an efficient multi-epitope oral vaccine against
+                                Helicobacter pylori using immunoinformatics and structural vaccinology approaches."
+                                Molecular BioSystems 13.4 (2017): 699-713.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Parvizpour, Sepideh et al. “In silico design of a triple-negative breast cancer vaccine
+                                by targeting cancer testis antigens.” BioImpacts : BI vol. 9,1 (2019): 45-56.
+                                doi:10.15171/bi.2019.06
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Amorim, K., Rampazo, E., Antonialli, R. et al. The presence of T cell epitopes is
+                                important for induction of antibody responses against antigens directed to DEC205+
+                                dendritic cells. Sci Rep 6, 39250 (2016). https://doi.org/10.1038/srep39250
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Dar, Hamza Arshad, et al. "Immunoinformatics-Aided Design and Evaluation of a Potential
+                                Multi-Epitope Vaccine against Klebsiella Pneumoniae." Vaccines 7.3 (2019): 88.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Tang, Mi, et al. "Antitumor efficacy of the Runx2‑dendritic cell vaccine in
+                                triple‑negative breast cancer in vitro." Oncology Letters 16.3 (2018): 2813-2822.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                DNA-launched RNA replicon vaccines induce potent anti-Ebolavirus immune responses that
+                                can be further improved by a recombinant MVA boost. (2020, October 25). PubMed
+                                Central(PMC). <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6102224/"
+                                    target="blank">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6102224/</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                DiAndreth, B. (2019, January 1). PERSIST: A programmable RNA regulation platform using
+                                CRISPR endoRNases. BioRxiv. https://www.biorxiv.org/content/10.1101/2019.12.15.867150v1
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Ossevoort, M. (2003, October 20). Creation of immune ‘stealth’ genes for gene therapy
+                                through fusion with the Gly-Ala repeat of
+                                EBNA-1.GeneTherapy.
+                                https://www.nature.com/articles/3302098?error=cookies_not_supported&code=bb5e8128-3eea-4a9f-aa12-6ffffd0ab55a
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Multiepitope-Based Subunit Vaccine Design and Evaluation against Respiratory Syncytial
+                                Virus Using Reverse Vaccinology Approach. (2020, June 1). PubMed
+                                Central (PMC). https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7350008/
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                http://150.146.2.1/C-IMMSIM/
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+            </main>
+
+
+
+
+            <footer class="d-flex align-items-end pb-5">
+                <div class="container">
+                    <div class="row justify-content-between mt-5 pt-5">
+                        <div class="col-md-3">
+                            <h3>SPONSORS</h3>
+                            <div class="d-flex flex-wrap" style="width: 70%;">
+                                <div class="sponsor-logo mr-1 mb-1">
+                                    <img src="https://2020.igem.org/wiki/images/2/29/T--AFCM-Egypt--Sponsors1.jpeg"
+                                        class="rounded-circle" width="35" alt="" />
+                                </div>
+                                <div class="sponsor-logo mr-1">
+                                    <img src="https://2020.igem.org/wiki/images/9/9e/T--AFCM-Egypt--Sponsors2.jpeg"
+                                        class="rounded-circle" width="35" alt="" />
+                                </div>
+                                <div class="sponsor-logo mr-1">
+                                    <img src="https://2020.igem.org/wiki/images/4/49/T--AFCM-Egypt--Sponsors3.jpeg"
+                                        class="rounded-circle" width="35" alt="" />
+                                </div>
+                                <div class="sponsor-logo mr-1">
+                                    <img src="https://2020.igem.org/wiki/images/4/45/T--AFCM-Egypt--Sponsors4.jpeg"
+                                        class="rounded-circle" width="35" alt="" />
+                                </div>
+                                <div class="sponsor-logo mr-1">
+                                    <img src="https://2020.igem.org/wiki/images/1/12/T--AFCM-Egypt--Sponsors5.jpeg"
+                                        class="rounded-circle" width="35" alt="" />
+                                </div>
+                                <div class="sponsor-logo mr-1">
+                                    <img src="https://2020.igem.org/wiki/images/0/0a/T--AFCM-Egypt--Sponsors6.jpeg"
+                                        class="rounded-circle" width="35" alt="" />
+                                </div>
+                                <div class="sponsor-logo mr-1">
+                                    <img src="https://2020.igem.org/wiki/images/2/26/T--AFCM-Egypt--Sponsors7.jpeg"
+                                        class="rounded-circle" width="35" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 align-items-between">
+                            <div class="my-auto">
+                                <img src="https://2020.igem.org/wiki/images/5/55/T--AFCM-Egypt--LOGO-BEGIN.png"
+                                    width="40%" alt="" />
+                                <h4>We Engineer <br />To Clear..</h4>
+                            </div>
+                            <div class="text-white d-flex align-items-center">
+                                <div class="d-inline mr-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="25.426" viewBox="0 0 70.426 88">
+                                        <defs>
+                                            <linearGradient id="linear-gradient" x1="0.49" y1="-0.398" x2="0.508"
+                                                y2="1.168" gradientUnits="objectBoundingBox">
+                                                <stop offset="0.132" stop-color="#01cf2d" />
+                                                <stop offset="0.794" stop-color="#009804" />
+                                            </linearGradient>
+                                        </defs>
+                                        <g id="Groupe_92" data-name="Groupe 92"
+                                            transform="translate(-747.027 -6386.493)">
+                                            <path id="Tracé_447" data-name="Tracé 447"
+                                                d="M817.453,6436.63a35.213,35.213,0,1,1-35.225-35.2A35.222,35.222,0,0,1,817.453,6436.63Z"
+                                                fill="url(#linear-gradient)" />
+                                            <text id="_" data-name="@" transform="translate(752.197 6457.493)"
+                                                fill="#fff" font-size="65.925" font-family="SegoeUI, Segoe UI">
+                                                <tspan x="0" y="0">@</tspan>
+                                            </text>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <small>igem.afcm@gmail.com</small>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h3 class="mt-5">FOLLOW US</h3>
+                            <div class="d-flex justify-content-between" style="width: 50%;">
+                                <i class="fa fa-facebook-square" style="font-size: 25px; color: #3b5998	;"
+                                    aria-hidden="true"></i>
+                                <i class="fa fa-twitter-square" style="font-size: 25px; color: #1da1f2;"
+                                    aria-hidden="true"></i>
+                                <i class="fa fa-instagram" style="font-size: 25px; color: #8a3ab9;"
+                                    aria-hidden="true"></i>
+
+                            </div>
+                        </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/T--AFCM-Egypt--style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="navbar-inverse navbar-fixed-left">
+                <ul class="side-nav-items py-5 px-2">
+                    <a href="#description">
+                        <li>
+                            Description
+                        </li>
+                    </a>
+                    <a href="#dataset">
+                        <li>
+                            Dataset Gathering
+                        </li>
+                    </a>
+                    <a href="#dnaVaccine">
+                        <li>
+                            DNA vaccine circuit
+                        </li>
+                    </a>
+                    <a href="#methodology">
+                        <li>
+                            Methodology Guidelines
+                        </li>
+                    </a>
+                    <a href="#conclusion">
+                        <li>
+                            Conclusion
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <nav class="navbar navbar-expand-lg pl-4 pt-3 pr-4 mb-5 container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img class="navbar-toggler-icon d-inline"
+                        src="https://2020.igem.org/wiki/images/d/d3/T--AFCM-Egypt--navbarbutton.jpeg" alt="">
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Team
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="team.html">Team members</a>
+                                <a class="dropdown-item" href="#">Attributions</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Project
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Description</a>
+                                <a class="dropdown-item" href="#">Engineering</a>
+                                <a class="dropdown-item" href="#">Contribution</a>
+                                <a class="dropdown-item" href="#">Implementation</a>
+                                <a class="dropdown-item" href="#">Entrepreneurship</a>
+                                <a class="dropdown-item" href="#">Modeling</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Parts
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Basic Parts</a>
+                                <a class="dropdown-item" href="#">Composite Parts</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Software</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Human Practices
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Human Practices</a>
+                                <a class="dropdown-item" href="#">Education</a>
+                                <a class="dropdown-item" href="#">Collaboration</a>
+                                <a class="dropdown-item" href="#">Partnership</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="py-5 container">
+                <h1>Modeling of DREP-based vaccine replication vs traditional vaccine replication</h1>
+                <section id="description" class="d-flex flex-column align-items-center my-5">
+                    <h2>Description</h2>
+                    <p>
+                        To simulate the efficacy of DREP-based Vaccine, we compared between plus-strand RNA molecules of
+                        traditional DNA vaccine replication vs plus-strand RNA molecules of DREP-based Vaccine within
+                        VMS. using populations of numbers (in the cytoplasm) of plus-strand viral RNA molecules (RPC),
+                        translation complexes (TC), viral polyprotein molecules (P), the enzyme NS5B and associated
+                        viral proteins needed for RNA synthesis (EC), the numbers of plus-strand RNA within the VMS (
+                        after self-amplification) (RP), dsRNA within the VMS (RD), viral polymerase complexes within the
+                        VMS (E), the numbers of plus-strand RNA and dsRNA replicative intermediate complexes ( RIP and
+                        RID) respectively.
+                    </p>
+                    <small class="text-center">Parameter Estimates</small>
+                    <img src="https://2020.igem.org/wiki/images/5/5c/T--AFCM-Egypt--ModelingRepTable.png" width="80%"
+                        class="mt-4" style="opacity: .89;" alt="">
+                    <img src="https://2020.igem.org/wiki/images/5/5d/T--AFCM-Egypt--ModelingRepTable2.png" width="80%"
+                        class="mb-4" style="opacity: .89;" alt="">
+
+                    <h3>Equation (1)</h3>
+                    <img src="https://2020.igem.org/wiki/images/e/ee/T--AFCM-Egypt--ModelingRepEq1.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <p>Plus-strand RNA, RPC, interacts with host cell ribosomes, (Ribo=10), to form a translation
+                        complex at an effective rate k1. RPC, by forming polysomes, disappears at rate k1 and reappears
+                        at rate k2 when translation is complete. Nucleases at the rate of MPC can degrade free
+                        plus-strand RNAs in the cytoplasm, lost from the cytoplasm by transport into VMS at the rate of
+                        kPin, and acquired by transport out of VMS at the rate of kPout.
+                    </p>
+                    <h3>Equation (2)</h3>
+                    <img src="https://2020.igem.org/wiki/images/6/66/T--AFCM-Egypt--ModelingRepEq2.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <p>TC, which degrades at rate MT and Ribo represents a complex of 10 ribosomes to initiate
+                        translation concomitantly with RPC.</p>
+                    <h3>Equation (3)</h3>
+                    <img src="https://2020.igem.org/wiki/images/8/84/T--AFCM-Egypt--ModelingRepEq3.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        Free viral polyprotein molecules, P, are produced by translation into separate viral proteins,
+                        including the enzymes responsible for viral RNA synthesis, at a rate of k2 per translation
+                        complex within the cytoplasm.
+                    </p>
+                    <h3>
+                        Equation (4)
+                    </h3>
+                    <img src="https://2020.igem.org/wiki/images/6/66/T--AFCM-Egypt--ModelingRepEq4.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <p>Enzymes responsible for viral RNA synthesis, Ecyt, e.g., NS5B, at rate kc. Degraded before
+                        reaching the VMS at rate MEC, or transported into VMS at rate k8.
+                    </p>
+                    <h3>Equation (5-9)</h3>
+                    <img src="https://2020.igem.org/wiki/images/d/d5/T--AFCM-Egypt--ModelingRepEq5-9.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        In VMS, de novo development of RIPand RID complexes occurs with the rate constants k3 and k5,
+                        respectively, and degrades with the MP2 and MD2 rate constants. The nascent plus- and
+                        minus-strand RNAs are synthesised with rate constants of k4p and k4m , respectively. In VMS (RP
+                        and Rds), free plus-strand RNA and dsRNA degrade with MP and MD2 rate constants, respectively.
+                        Furthermore, the polymerase complex degrades or loses activity within VMS with a constant ME
+                        rate, which is probably lower than the MEC cytoplasmic degradation rate.
+                    </p>
+                    <h2>Simulation</h2>
+                    <h3>1-Plus-strand RNA (Traditional Vaccine)</h3>
+                    <img src="https://2020.igem.org/wiki/images/c/c3/T--AFCM-Egypt--ModelingRepSimulationChar1.png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        The graph shows the concentration of plus strand RNA molecules in the traditional vaccine
+                        relying on the traditional replicating abilities of traditional vaccines. It shows that the
+                        steady state is achieved after 75 days with a maximum concentration of 175 (population scale).
+                    </p>
+                    <h3>
+                        2-plus-strand RNA (based on self-replicating Replicons)
+                    </h3>
+                    <img src="https://www.painweek.org/sites/medical/painweek/files/adb9ca%26text%3DIMAGE%2BHOLDER%26font%3Dkelson%20(1).png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        The graph shows the concentration of plus strand RNA molecules in our vaccine relying on self
+                        replicating viral abilities of replicons. It shows that the steady state is achieved after 75
+                        days with a maximum concentration of 250 (population scale). which indicates that our design
+                        increases the efficiency of the vaccine by increasing the concentration of plus-strand RNA
+                        molecules.
+                    </p>
+                    <h3>
+                        Promoter optimization
+                    </h3>
+                    <p>
+                        Although, we have shown that replicon-based delivery outperform the traditional delivery, AFCM
+                        Egypt-2020 found that other factors could control replicon function such as SGPs. So, the team
+                        started by optimizing sets of SGPs for both EEV and SFV alpha viruses correlating their
+                        stability with experimentally reported expression efficacy. AFCM Egypt-2020 selected SGP30 and
+                        SGP15 because they have the highest expression rates as shown in the plot below.
+                    </p>
+                    <img src="https://www.painweek.org/sites/medical/painweek/files/adb9ca%26text%3DIMAGE%2BHOLDER%26font%3Dkelson%20(1).png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        And as shown in these graphs below, the number of +ve strand RNA is doubled by using SGP15 in
+                        comparison to SGP30. That’s why we chose it in the circuit.
+                    </p>
+                    <img src="https://www.painweek.org/sites/medical/painweek/files/adb9ca%26text%3DIMAGE%2BHOLDER%26font%3Dkelson%20(1).png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                </section>
+
+                <h1>Immune evasion system vs traditional degradation of replicon</h1>
+                <section id="description" class="d-flex flex-column align-items-center my-5">
+                    <p>
+                        We have been recommended by Dr noreen wauford from MIT to construct an immune evasion system to
+                        protect our replicon from immune attack So, we constructed it via addition of Gly/Ala repeats
+                        upstream to our 3 vaccine versions to be protected from CTls attacks We tested it via these
+                        differential equations.
+                    </p>
+                    <h3>Equations (1-11)</h3>
+                    <img src="https://2020.igem.org/wiki/images/f/f6/T--AFCM-Egypt--ModelingGlyEq1-11.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        The designations for the concentrations are as follows. A, polyprotein; M, active replicase
+                        complexes; S, inactive replicase complexes; P, the form of inactive replicase complexes
+                        incapable of converting to active replicase complexes; F, cellular factor; R (E), the positive -
+                        (negative-) strand RNA; O (N), active replicase complexes on the positive- (negative-) strand
+                        RNA. where Q is the average concentration of the positive-strand RNA (R) with the free
+                        initiation site under the assumption that the active replicase complexes (O) are uniformly
+                        distributed along the strand length. And where V is the average concentration of the
+                        minus-strand RNA (E) with the free initiation site under the assumption that the active
+                        replicase complexes (N) are uniformly distributed along the strand length.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/e/ee/T--AFCM-Egypt--ModelingGlyTable1.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <h2>Results </h2>
+                    <img src="https://www.painweek.org/sites/medical/painweek/files/adb9ca%26text%3DIMAGE%2BHOLDER%26font%3Dkelson%20(1).png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        The simulation showed a higher efficacy with using this system as it delays the time needed for
+                        degradation by about 30 days after addition of Gly/Ala repeats as illustrated in these graphs.
+                    </p>
+                </section>
+                <h1>Modeling of Immune Response in DREP-based vaccine vs Traditional DNA Vaccine</h1>
+                <section id="description" class="d-flex flex-column align-items-center my-5">
+                    <p>
+                        We have already simulated immune response against the three versions of multi-epitope vaccine,
+                        yet, we wanted to simulate variation in immune response against DREP based delivery vs
+                        traditional DNA vaccine delivery via T helper and DCs response.
+                        Vaccine cells (VC) are supposed to be recognized by Cytotoxic T cells (TC) and Antibodies (AB)
+                        that kill them. Killed VC releases both Interleukin-12 (IL12) and Tumor associated antigens
+                        (TAA). TAA are captured by antigen presenting cells (APC) and then presented to T helper cells
+                        (TH). IL12 stimulates both TH and TC actions. TH releases interleukin-2 (IL2) which boosts TH,
+                        TC, and B actions and stimulates B cells to differentiate into plasma B cells (B). B releases
+                        AB, and both AB and stimulated TC kill cancer cells (CC), which further release TAA.
+
+                    </p>
+                    <h3>Equations (1)</h3>
+                    <img src="https://2020.igem.org/wiki/images/7/79/T--AFCM-Egypt--ModelingImmuneEq1.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        Vaccine cells (VC) with a predefined dose are inserted into the host. The vaccine cell
+                        inoculation is modelled by a kin(t, q) feature that adds q vaccine cells to the host cells at
+                        time t, if an injection was planned at that time. Since vaccine cells come from the outside,
+                        this concept is the only source of the equation.Cytotoxic T cells that recognise vaccine cells
+                        by their allogeneic MHC class II molecules (term -a19TCVC) or by particular antibodies that can
+                        specifically destroy vaccine cells by a complementary mechanism (term -a17ABVC) are blocked by
+                        vaccine cells that die from various causes, such as natural death (term -μ1VC).
+
+                    </p>
+                    <h3>Equations (2)</h3>
+                    <img src="https://2020.igem.org/wiki/images/5/50/T--AFCM-Egypt--ModelingImmuneEq2.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        The dead or killed vaccine or cancer cells may release tumor-associated antigens (TAA). The
+                        number of released antigens is thought to be equal to both the number of vaccine cells and the
+                        number of suppressed cancer cells (VC and TAA respectively) (g21(a19TC+ a17AB+μ1)VC and g28
+                        (a88+a89TC)VC). The root elements of the equation are represented by these two terms.Antigens,
+                        such as dendritic cells , macrophages and B cells, are exposed to normal degradation (term
+                        μ2TAA) and phagocytosis by antigen presenting cells (-a20APCTAA). In addition, antibodies can
+                        bind to free immune complexes producing antigens (term -a27ABTAA).
+                    </p>
+                    <h3>Equations (3)</h3>
+                    <img src="https://2020.igem.org/wiki/images/8/86/T--AFCM-Egypt--ModelingImmuneEq3.png" width="80%"
+                        class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        The percentage of T helper activated cells is determined from the number of cells presenting
+                        antigen (APC) that occur in the system (g40APC term). Interleukins 12 and 2 (IL12 and IL2) tend
+                        to promote the priming and duplication of T helper cells (terms alp46 (IL2 IL2+s1)TH and
+                        alp45(IL12 IL12+s2)TH). It is worth noting that these cells are able to self-stimulate their
+                        activities because interleukin 2 is produced by T helper cells. The death factor is modelled on
+                        the word -μ4TH.
+                    </p>
+                    <h3>Equations (4)</h3>
+                    <img src="https://www.painweek.org/sites/medical/painweek/files/adb9ca%26text%3DIMAGE%2BHOLDER%26font%3Dkelson%20(1).png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        A population of B cells (B) that has been triggered by positive feedback from T helper cells
+                        (TH) (g34TH term) and is therefore capable of releasing particular antibodies against cancer
+                        cells. In equation ( 10), we provide the B as an APC function. In promoting B cell replication,
+                        interleukin 2 (IL2) produced by T helper cells plays an adjuvant role (term alp36(IL2 IL2+s3)B).
+                        Death is modelled after the word -μ3B.
+
+                    </p>
+                    <h3>Equations (5)</h3>
+                    <img src="https://www.painweek.org/sites/medical/painweek/files/adb9ca%26text%3DIMAGE%2BHOLDER%26font%3Dkelson%20(1).png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        Interleukin 12 (IL12) is mainly introduced through vaccine administrations, so it depends on the
+                        vaccine dosage. In previous in vivo experiments [24] interleukin 12 was introduced separately,
+                        but after transduction of IL2 genes inside vaccine cells [4], it is released by killed vaccine
+                        cells, so it is proportional to the number of killed vaccine cells (term g51(a19TC + a17AB +
+                        μ1)VC).
+
+                    </p>
+                    <h3>Equations (6)</h3>
+                    <img src="https://www.painweek.org/sites/medical/painweek/files/adb9ca%26text%3DIMAGE%2BHOLDER%26font%3Dkelson%20(1).png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        The release of interleukin 2 is mainly by T helper cells (g64TH term). Interleukin 2 induces T
+                        helper priming, as previously mentioned, and primed T helper cells release more interleukin 2.
+                        It is prone to natural degradation (-μ6IL2) and is partly consumed by cytotoxic T cell priming
+                        (-a69TCIL2 term) and B cell replication (-a63BIL2 term) for mitotic and stimulus signals.
+                    </p>
+                    <h3>Equations (7)</h3>
+                    <img src="https://www.painweek.org/sites/medical/painweek/files/adb9ca%26text%3DIMAGE%2BHOLDER%26font%3Dkelson%20(1).png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        The major outcome of the humoral immune response is antibodies. Plasma B(B) cells (term g73B)
+                        emit antibodies (AB) and are subject to natural degradation (term -μ7AB model). In addition,
+                        after performing their roles, they disappear: binding to particular targets, i.e. antigens
+                        (a72TAAAB), cancer and vaccine cells (a78CCAB and a71VCAB, respectively).
+                    </p>
+                    <h3>Equations (8)</h3>
+                    <img src="https://www.painweek.org/sites/medical/painweek/files/adb9ca%26text%3DIMAGE%2BHOLDER%26font%3Dkelson%20(1).png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        Development of cancer cells (CC) is modelled by the expression [(1-(CCcm )*K-α88].The term
+                        -α88CC is used to take into account the killing of CC by other cells of the immune system that
+                        are known to be of minor significance to the mechanism and are thus not clearly modelled, such
+                        as Natural Killer cells that can destroy cancer cells that under express the main class I
+                        complex of histocompatibility. The word p models the continuous development of cancer cells from
+                        newborns.
+                    </p>
+                    <h3>Equations (9)</h3>
+                    <img src="https://www.painweek.org/sites/medical/painweek/files/adb9ca%26text%3DIMAGE%2BHOLDER%26font%3Dkelson%20(1).png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        The priming of cytotoxic T cells (TC) relies primarily on vaccine cells (VC). In order to
+                        promote presentation (term γ91VC), vaccine cells are equipped with an allogeneic major
+                        histocompatibility class I complex. Via the release of interleukin 2 (term
+                        α96*(IL2IL2+S96)*TC)), replication is instead indirectly induced by T helper cells. The word
+                        -μ9TC is used to model natural death.
+                    </p>
+                    <h3>Equations (10)</h3>
+                    <img src="https://www.painweek.org/sites/medical/painweek/files/adb9ca%26text%3DIMAGE%2BHOLDER%26font%3Dkelson%20(1).png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        With the term antigen presenting cells we indicate a class of different types of cells, such as
+                        dendritic cells,, whose focal mission is to recognize, capture, and process antigens in order to
+                        present small antigenic sequences named peptides in conjunction with MHC class molecules to both
+                        cytotoxic and helper T cells. Antigen Presenting cells (APC) are then depending on the quantity
+                        of the antigens that have been released (term g02TAA), and can die (term -μ0APC).
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/4/43/T--AFCM-Egypt--ModelingImmuneTable1.png"
+                        width="80%" class="mt-4" style="opacity: .89;" alt="">
+                    <img src="https://2020.igem.org/wiki/images/9/93/T--AFCM-Egypt--ModelingImmuneTable2.png"
+                        width="80%" class="" style="opacity: .89;" alt="">
+                    <img src="https://2020.igem.org/wiki/images/0/0f/T--AFCM-Egypt--ModelingImmuneTable3.png"
+                        width="80%" class="" style="opacity: .89;" alt="">
+                    <img src="https://2020.igem.org/wiki/images/5/5d/T--AFCM-Egypt--ModelingImmuneTable4.png"
+                        width="80%" class="" style="opacity: .89;" alt="">
+                    <img src="https://2020.igem.org/wiki/images/d/d7/T--AFCM-Egypt--ModelingImmuneTable5.png"
+                        width="80%" class="" style="opacity: .89;" alt="">
+                    <h3>
+                        simulation
+                    </h3>
+                    <small class="text-center">1-Th response in DREP vs DNA vaccine</small>
+                    <img src="https://www.painweek.org/sites/medical/painweek/files/adb9ca%26text%3DIMAGE%2BHOLDER%26font%3Dkelson%20(1).png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>As shown in these graphs, T helper cell response is increased in DREP in comparison to
+                        traditional DNA vaccine which indicates eliciting higher immune response in DREP.</p>
+                    <small class="text-center">2-DCs response in DREP vs DNA vaccine</small>
+                    <img src="https://www.painweek.org/sites/medical/painweek/files/adb9ca%26text%3DIMAGE%2BHOLDER%26font%3Dkelson%20(1).png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>And for DC response, it showed significant difference due to increase in concentration of tumour
+                        associated antigen in DREP. Therefore, DCs act as a bridge between innate and adaptive immunity.
+                    </p>
+                </section>
+                <h1>Mathematical‌ ‌Modeling‌ ‌of‌ ‌Anti-Cancer‌ ‌Response‌ ‌in‌ ‌
+                    DREP-based‌ ‌vaccine.‌</h1>
+                <section id="description" class="d-flex flex-column align-items-center my-5">
+                    <p>
+                        In order to simulate the anti-cancer response of our DREP-based vaccine, we performed this model
+                        to follow the dynamic of tumor size T (t) , TGF-β cocentration B(t), activated cytotoxic
+                        effector cells E(t), regulatory T cells R(t), vaccine-induced cytotoxic effector V(t).
+                        uninfected susceptible target cells (U), infected virus-producing cells (I), and the virus load
+                        (L). All are formulated by the following system of nonlinear ordinary differential equations
+                        (ODEs):
+                    </p>
+                    <small class="text-center">Table (1) shows Major used parameters.
+                    </small>
+                    <img src="https://2020.igem.org/wiki/images/6/69/T--AFCM-Egypt--ModelingMathTable1.png" width="80%"
+                        class="mt-4" style="opacity: .89;" alt="">
+                    <img src="https://2020.igem.org/wiki/images/c/c7/T--AFCM-Egypt--ModelingMathTable2.png" width="80%"
+                        class="mb-4" style="opacity: .89;" alt="">
+                    <h3>Equation (1)
+                    </h3>
+                    <img src="https://www.painweek.org/sites/medical/painweek/files/adb9ca%26text%3DIMAGE%2BHOLDER%26font%3Dkelson%20(1).png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p> The tumor follows growth rate, a0, and carrying capacity, 1/c0. The second term describes the
+                        ability of immune cells to induce apoptosis of tumor cells. The last term defines the action of
+                        vaccine cells on tumor cells. Since vaccine cells are considered to be fully differentiated,
+                        they are assumed to be unaffected by the inhibitory effects of TGF-β. Vaccine cells induce the
+                        death of tumor cells at a rate δ0
+                    </p>
+                    <h3>Equation (2)
+                    </h3>
+                    <img src="https://www.painweek.org/sites/medical/painweek/files/adb9ca%26text%3DIMAGE%2BHOLDER%26font%3Dkelson%20(1).png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p> Maximum rate of TGF-β production is represented by the parameter a1; c2 is the critical tumor
+                        size at which the switch occurs; and the decay rate of the protein is d
+                    </p>
+                    <h3>Equation (3)
+                    </h3>
+                    <img src="https://www.painweek.org/sites/medical/painweek/files/adb9ca%26text%3DIMAGE%2BHOLDER%26font%3Dkelson%20(1).png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p> It describes the dynamics of the number of effector T cells . The first term represents immune
+                        recruitment. This term is divided by (1 + c3T B) for the negative effect of tumor growth and
+                        TGF-β production on immune recruitment a. r represents differentiation of effector cells into
+                        regulatory T cells . The fourth term models the removal of effector T cells from the system.
+                        These cells have both a natural death rate (δ1) ; and a death rate due to interaction with
+                        regulatory T cells (δ0).
+                    </p>
+                    <h3>Equation (4)
+                    </h3>
+                    <img src="https://www.painweek.org/sites/medical/painweek/files/adb9ca%26text%3DIMAGE%2BHOLDER%26font%3Dkelson%20(1).png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p> The first term represents that Tregs differentiate from effector T cells at a rate (r). The
+                        second term is the rate at which Tregs die.
+                    </p>
+                    <h3>Equation (5)
+                    </h3>
+                    <img src="https://www.painweek.org/sites/medical/painweek/files/adb9ca%26text%3DIMAGE%2BHOLDER%26font%3Dkelson%20(1).png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        The first team is modeled as an influx of activated tumor-specific cytotoxic T cells. The second
+                        term represents the natural death rate.
+                    </p>
+                    <h3>Equation (6)
+                    </h3>
+                    <img src="https://www.painweek.org/sites/medical/painweek/files/adb9ca%26text%3DIMAGE%2BHOLDER%26font%3Dkelson%20(1).png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        Uninfected target cells (U) are produced at a constant rate λ and die at rate d2
+                    </p>
+                    <h3>Equation (7)
+                    </h3>
+                    <img src="https://www.painweek.org/sites/medical/painweek/files/adb9ca%26text%3DIMAGE%2BHOLDER%26font%3Dkelson%20(1).png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        By the interaction of virus (L) with uninfected target cells (U) at a constant infectivity rate
+                        k, the target cells become infected cells (I)
+                    </p>
+                    <h3>Equation (8)
+                    </h3>
+                    <img src="https://www.painweek.org/sites/medical/painweek/files/adb9ca%26text%3DIMAGE%2BHOLDER%26font%3Dkelson%20(1).png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>
+                        Infected cells (I), which in turn produce infectious virus (L) with production rate p. Due to
+                        viral cytopathicity, immune elimination and/or apoptosis, infected cells (I) die at a rate δ2 .
+                        Virus is cleared at rate c from the cells.
+                    </p>
+                    <h2>Simulation </h2>
+                    <img src="https://www.painweek.org/sites/medical/painweek/files/adb9ca%26text%3DIMAGE%2BHOLDER%26font%3Dkelson%20(1).png"
+                        width="80%" class="my-4" style="opacity: .89;" alt="">
+                    <p>And in conclusion, it’s found that DREP-based vaccine elicits stronger anticancer response vs
+                        traditional DNA vaccine as shown in the graph above by decreasing tumor size.</p>
+                </section>
+                <h1>Mathematical‌ ‌Modeling‌ ‌of‌ ‌Anti-Cancer‌ ‌Response‌ ‌in‌ ‌
+                    DREP-based‌ ‌vaccine.‌</h1>
+                <section id="description" class="d-flex flex-column align-items-center my-5">
+                </section>
+            </main>
+
+        </div>
+    </div>
+</body>
+
+</html>
